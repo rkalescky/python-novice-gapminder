@@ -55,42 +55,6 @@ does not require an internet connection.
 > [JupyterLab user interface documentation][jupyterlab-ui].
 {: .callout}
 
-## Starting JupyterLab
-
-### Mac OS X
-To start the JupyterLab server you will need to access the command line through the Terminal. 
-There are two ways to open Terminal on Mac.
-
-1. In your Applications folder, open Utilities and double-click on Terminal
-2. Press <kbd>Command</kbd> + <kbd>spacebar</kbd> to launch Spotlight. Type `Terminal` and then 
-double-click the search result or hit <kbd>Enter</kbd>
-
-After you have launched Terminal, type the command to launch the JupyterLab server.
-
-~~~
-$ jupyter lab
-~~~
-{: .bash}
-
-### Windows Users
-To start the JupyterLab server you will need to access the open Anaconda Prompt.
-
-Press <kbd>Windows Logo Key</kbd> and search for `Anaconda Prompt`, click the result or press enter.
-
-After you have launched the Anaconda Prompt, type the command:
-
-~~~
-$ jupyter lab
-~~~
-{: .bash}
-
-Below is a screenshot of a similar JupyterLab landing page to the one that should open in your 
-default web browser after starting the JupyterLab server on wither Mac OS X or Windows.
-
-<p align='center'>
-  <img alt="JupyterLab landing page" src="../fig/0_jupyterlab_landing_page.png" width="750"/>
-</p>
-
 ## The JupyterLab Interface
 
 JupyterLab has many features found in traditional integrated development environments (IDEs) but 
@@ -497,19 +461,6 @@ Or use [named links][data_carpentry].
 > {: .solution}
 {: .challenge}
 
-## Closing JupyterLab
-
-*   From the Menu Bar select the "File" menu and the choose "Quit" at the bottom of the dropdown menu. You will be prompted to confirm that you wish to shutdown the JupyterLab server (don't forget to save your work!). Click "Confirm" to shutdown the JupyterLab server.
-*   To restart the JupyterLab server you will need to re-run the following command from a shell.
-
-~~~
-$ jupyter lab
-~~~
-
-> ## Closing JupyerLab
->
-> Practice closing and restarting the JupyterLab server.
-{: .challenge}
 [anaconda]: https://docs.continuum.io/anaconda/install
 [jupyterlab-ui]: https://jupyterlab.readthedocs.io/en/stable/user/interface.html
 [jupyterlab-notebook-docs]: https://jupyterlab.readthedocs.io/en/stable/user/notebook.html

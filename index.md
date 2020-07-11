@@ -4,36 +4,35 @@ root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
 
-This lesson is an introduction to programming in Python for people with little or no previous 
-programming experience. It uses plotting as its motivating example, and is designed to be used in 
-both [Data Carpentry][dc-lessons] and [Software Carpentry][swc-lessons] workshops. 
-This lesson references [JupyterLab][jupyterlab], but can be taught using a regular Python interpreter 
-as well. Please note that this lesson uses Python 3 rather than Python 2.
+## HPC OnDemand Web Portal
 
-> ## Under Design
->
-> **This lesson is currently in its early design stage;
-> please check [the design notes]({{ page.root }}/design/)
-> to see what we have so far.
-> Contributions are very welcome:
-> we would be particularly grateful for exercises
-> and for commentary on the ones already there.**
-{: .callout}
+HPC OnDemand provides an integrated, single access point for HPC
+resources on the ManeFrame II (M2) supercomputer.
 
-> ## Prerequisites
->
-> 1.  Learners need to understand what files and directories are,
->     what a working directory is,
->     and how to start a Python interpreter.
->
-> 2. Learners must install Python before the class starts.
->
-> 3. Learners must get the gapminder data before class starts:
->    please download and unzip the file 
->    [python-novice-gapminder-data.zip]({{page.root}}/files/python-novice-gapminder-data.zip).
->
->    Please see [the setup instructions][lesson-setup]
->    for details.
-{: .prereq}
+### Accessing the Portal
+
+Access to the HPC OnDemand web portal requires an existing M2 account.
+
+1.  Go to [hpc.smu.edu](https://hpc.smu.edu/).
+2.  Sign in using your SMU ID and SMU password
+
+### JupyterLab
+
+1.  Select "JupyterLab" from the "Interactive Apps" drop-down menu.
+2.  Select options required for your JupyterLab instance. These options are the
+    same as those requested via a standard Slurm script on M2. For today's
+    workshop, leave "Additional environment modules to load", "Custom module
+    paths", and "Custom environment settings" blank, set "Partition" to "htc", set
+    "Number of hours" to 8, "Number of nodes" to 1, "Cores per node" to 1, "GPUs
+    per node" to 0, and "Memory" to 4.
+3.  Select "Launch"
+4.  Wait for the job to start on M2. When the job starts a new button
+    "Connect to JupyterLab" button will appear.
+5.  Select "Connect to JupyterLab"
+6.  The Jupyter Notebook graphical interface will be presented and
+    running on the M2 resource requested.
+7.  When finished using the JupyterLab instance, return to the "My
+    Interactive Sessions" tab in your browser and select "Delete" and
+    "Confirm", when prompted, to cancel the job on M2.
 
 {% include links.md %}
